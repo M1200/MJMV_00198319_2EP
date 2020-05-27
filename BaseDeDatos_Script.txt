@@ -1,0 +1,90 @@
+CREATE DATABASE "ParcialHugo"
+    WITH 
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    CONNECTION LIMIT = -1;
+
+CREATE TABLE public."APPUSER"
+(
+    iduser integer NOT NULL DEFAULT nextval('"APPUSER_iduser_seq"'::regclass),
+    full_name character varying(40) COLLATE pg_catalog."default" NOT NULL,
+    user_name character varying(30) COLLATE pg_catalog."default" NOT NULL,
+    password character varying(12) COLLATE pg_catalog."default" NOT NULL,
+    user_type boolean NOT NULL,
+    CONSTRAINT pk_iduser PRIMARY KEY (iduser)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE public."APPUSER"
+    OWNER to postgres;
+
+
+CREATE TABLE public."BUSINESS"
+(
+    id_business integer NOT NULL DEFAULT nextval('"BUSINESS_id_bussiness_seq"'::regclass),
+    name character varying(40) COLLATE pg_catalog."default" NOT NULL,
+    descripcion character varying(100) COLLATE pg_catalog."default" NOT NULL,
+    CONSTRAINT pk_idbusiness PRIMARY KEY (id_business)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE public."BUSINESS"
+    OWNER to postgres;
+
+CREATE TABLE public."ADDRESS"
+(
+    id_address integer NOT NULL DEFAULT nextval('"ADDRESS_id_address_seq"'::regclass),
+    id_user integer NOT NULL,
+    address character varying(100) COLLATE pg_catalog."default" NOT NULL,
+    CONSTRAINT pk_idaddress PRIMARY KEY (id_address),
+    CONSTRAINT fk_iduser FOREIGN KEY (id_user)
+        REFERENCES public."APPUSER" (iduser) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE public."ADDRESS"
+    OWNER to postgres;
+
+CREATE TABLE public."PRODUCT"
+(
+    id_product integer NOT NULL DEFAULT nextval('"PRODUCT_id_product_seq"'::regclass),
+    id_business integer NOT NULL,
+    name character varying(40) COLLATE pg_catalog."default" NOT NULL,
+    CONSTRAINT pk_idproduct PRIMARY KEY (id_product),
+    CONSTRAINT fk_idbusiness FOREIGN KEY (id_business)
+        REFERENCES public."BUSINESS" (id_business) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE public."PRODUCT"
+    OWNER to postgres;
+
+CREATE TABLE public."APPORDER"
+(
+    id_order integer NOT NULL DEFAULT nextval('"APPORDER_id_order_seq"'::regclass),
+    create_date date NOT NULL,
+    id_product integer NOT NULL,
+    id_address integer NOT NULL,
+    CONSTRAINT pk_idorder PRIMARY KEY (id_order),
+    CONSTRAINT fk_idadress FOREIGN KEY (id_address)
+        REFERENCES public."ADDRESS" (id_address) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION,
+    CONSTRAINT fk_idproduct FOREIGN KEY (id_product)
+        REFERENCES public."PRODUCT" (id_product) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE public."APPORDER"
+    OWNER to postgres;
