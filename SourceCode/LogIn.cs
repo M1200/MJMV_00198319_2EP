@@ -16,5 +16,19 @@ namespace HUGO
         {
             InitializeComponent();
         }
+
+
+
+        private void Regresar_Click(object sender, EventArgs e)
+        {
+            MainMenu mainMenu = new MainMenu();
+            mainMenu.Show();
+            this.Hide();
+        }
+
+        private void Salir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
