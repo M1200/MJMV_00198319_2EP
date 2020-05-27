@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace HUGO
@@ -35,6 +28,13 @@ namespace HUGO
             tableLayoutPanel1.SetColumnSpan(current, 1);
 
         }
+        private void ActualizarCo_Click(object sender, EventArgs e)
+        {
+            tableLayoutPanel1.Controls.Remove(current);
+            current = new ActualizarContra();
+            tableLayoutPanel1.Controls.Add(current, 0, 0);
+            tableLayoutPanel1.SetColumnSpan(current, 1);
+        }
 
         private void Regresar_Click(object sender, EventArgs e)
         {
@@ -48,6 +48,11 @@ namespace HUGO
             Application.Exit();
         }
 
-        
+        private void Continuar_Click(object sender, EventArgs e)
+        {
+            UsuarioComun usuario = new UsuarioComun();
+            usuario.Show();
+            this.Hide();
+        }
     }
 }

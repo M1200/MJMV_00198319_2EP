@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace HUGO
 {
-    public partial class UserControl1 : UserControl
+    public partial class Registro : UserControl
     {
-        public UserControl1()
+        public Registro()
         {
             InitializeComponent();
         }

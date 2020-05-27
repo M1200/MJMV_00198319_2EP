@@ -47,7 +47,7 @@
             this.button1.BackColor = System.Drawing.Color.White;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Bauhaus 93", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(12, 153);
+            this.button1.Location = new System.Drawing.Point(12, 225);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(108, 45);
             this.button1.TabIndex = 0;
@@ -60,7 +60,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Bauhaus 93", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(12, 236);
+            this.button2.Location = new System.Drawing.Point(12, 149);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(108, 45);
             this.button2.TabIndex = 1;
@@ -72,7 +72,7 @@
             this.button3.BackColor = System.Drawing.Color.White;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Bauhaus 93", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(12, 306);
+            this.button3.Location = new System.Drawing.Point(12, 359);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(108, 45);
             this.button3.TabIndex = 2;
@@ -85,7 +85,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("Bauhaus 93", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(12, 456);
+            this.button4.Location = new System.Drawing.Point(12, 494);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(108, 45);
             this.button4.TabIndex = 3;
@@ -99,7 +99,7 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button5.Font = new System.Drawing.Font("Bauhaus 93", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(12, 386);
+            this.button5.Location = new System.Drawing.Point(12, 292);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(108, 45);
             this.button5.TabIndex = 4;
@@ -112,7 +112,7 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button6.Font = new System.Drawing.Font("Bauhaus 93", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(12, 526);
+            this.button6.Location = new System.Drawing.Point(12, 424);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(108, 45);
             this.button6.TabIndex = 5;
@@ -151,7 +151,7 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 508F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(434, 508);
             this.tableLayoutPanel1.TabIndex = 8;
             // 

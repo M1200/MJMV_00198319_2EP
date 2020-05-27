@@ -36,8 +36,9 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.iniciarSesion1 = new HUGO.IniciarSesion();
             this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.iniciarSesion1 = new HUGO.IniciarSesion();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -134,16 +135,6 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(560, 367);
             this.tableLayoutPanel1.TabIndex = 6;
             // 
-            // iniciarSesion1
-            // 
-            this.iniciarSesion1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.iniciarSesion1.BackColor = System.Drawing.Color.Transparent;
-            this.iniciarSesion1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.iniciarSesion1.Location = new System.Drawing.Point(3, 3);
-            this.iniciarSesion1.Name = "iniciarSesion1";
-            this.iniciarSesion1.Size = new System.Drawing.Size(554, 361);
-            this.iniciarSesion1.TabIndex = 0;
-            // 
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.Purple;
@@ -156,6 +147,31 @@
             this.button5.TabIndex = 7;
             this.button5.Text = "Actualizar contraseña";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.ActualizarCo_Click);
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.White;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button6.Font = new System.Drawing.Font("Bauhaus 93", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.Black;
+            this.button6.Location = new System.Drawing.Point(222, 562);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(66, 40);
+            this.button6.TabIndex = 8;
+            this.button6.Text = "Continuar";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.Continuar_Click);
+            // 
+            // iniciarSesion1
+            // 
+            this.iniciarSesion1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.iniciarSesion1.BackColor = System.Drawing.Color.Transparent;
+            this.iniciarSesion1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.iniciarSesion1.Location = new System.Drawing.Point(3, 3);
+            this.iniciarSesion1.Name = "iniciarSesion1";
+            this.iniciarSesion1.Size = new System.Drawing.Size(554, 361);
+            this.iniciarSesion1.TabIndex = 0;
             // 
             // LogIn
             // 
@@ -163,6 +179,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(558, 614);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.button4);
@@ -193,5 +210,6 @@
 
         private IniciarSesion iniciarSesion1;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
     }
 }
