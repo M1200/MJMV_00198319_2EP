@@ -13,13 +13,28 @@ namespace HUGO
     public partial class LogIn : Form
     {
         private UserControl current = null;
+
         public LogIn()
         {
             InitializeComponent();
             current = iniciarSesion1;
         }
 
+        private void IniciarSesion_Click(object sender, EventArgs e)
+        {
+            tableLayoutPanel1.Controls.Remove(current);
+            current = new IniciarSesion();
+            tableLayoutPanel1.Controls.Add(current, 0, 0);
+            tableLayoutPanel1.SetColumnSpan(current, 1);
+        }
+        private void Registro_Click(object sender, EventArgs e)
+        {
+            tableLayoutPanel1.Controls.Remove(current);
+            current = new Registro();
+            tableLayoutPanel1.Controls.Add(current, 0, 0);
+            tableLayoutPanel1.SetColumnSpan(current, 1);
 
+        }
 
         private void Regresar_Click(object sender, EventArgs e)
         {
@@ -33,12 +48,6 @@ namespace HUGO
             Application.Exit();
         }
 
-        private void IniciarSesion_Click(object sender, EventArgs e)
-        {
-            tableLayoutPanel1.Controls.Remove(current);
-            current = new IniciarSesion();
-            tableLayoutPanel1.Controls.Add(current, 0, 0);
-            tableLayoutPanel1.SetColumnSpan(current, 1);
-        }
+        
     }
 }

@@ -37,6 +37,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.iniciarSesion1 = new HUGO.IniciarSesion();
+            this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -89,6 +90,7 @@
             this.button2.TabIndex = 3;
             this.button2.Text = "Registrate";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.Registro_Click);
             // 
             // button3
             // 
@@ -142,12 +144,26 @@
             this.iniciarSesion1.Size = new System.Drawing.Size(554, 361);
             this.iniciarSesion1.TabIndex = 0;
             // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.Purple;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button5.Font = new System.Drawing.Font("Bauhaus 93", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(294, 562);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(87, 40);
+            this.button5.TabIndex = 7;
+            this.button5.Text = "Actualizar contraseña";
+            this.button5.UseVisualStyleBackColor = false;
+            // 
             // LogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(558, 614);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -176,5 +192,6 @@
         #endregion
 
         private IniciarSesion iniciarSesion1;
+        private System.Windows.Forms.Button button5;
     }
 }
