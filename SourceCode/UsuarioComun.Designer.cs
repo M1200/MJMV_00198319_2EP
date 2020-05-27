@@ -82,6 +82,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "Modificar o Eliminar dirección";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.ModificarEliminar_Click);
             // 
             // button4
             // 
@@ -93,9 +94,9 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(108, 45);
             this.button4.TabIndex = 3;
-            this.button4.Text = "Cerrar sesión";
+            this.button4.Text = "Historial de pedidos:";
             this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.CerrarSesion_Click);
+            this.button4.Click += new System.EventHandler(this.Historial_Click);
             // 
             // button5
             // 
@@ -109,6 +110,7 @@
             this.button5.TabIndex = 4;
             this.button5.Text = "Regresar al Menu principal";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.RegresarMenu_Click);
             // 
             // button6
             // 

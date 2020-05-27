@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace HUGO
@@ -20,12 +13,7 @@ namespace HUGO
         }
 
        
-        private void CerrarSesion_Click(object sender, EventArgs e)
-        {
-            
-            MainMenu main = new MainMenu();
-            main.Show();
-        }
+        
 
         private void Salir_Click(object sender, EventArgs e)
         {
@@ -46,6 +34,29 @@ namespace HUGO
             current = new AgregarDirección();
             tableLayoutPanel1.Controls.Add(current, 0, 0);
             tableLayoutPanel1.SetColumnSpan(current, 1);
+        }
+
+        private void ModificarEliminar_Click(object sender, EventArgs e)
+        {
+            tableLayoutPanel1.Controls.Remove(current);
+            current = new ModificarEliminar();
+            tableLayoutPanel1.Controls.Add(current, 0, 0);
+            tableLayoutPanel1.SetColumnSpan(current, 1);
+        }
+
+        private void Historial_Click(object sender, EventArgs e)
+        {
+            tableLayoutPanel1.Controls.Remove(current);
+            current = new HistorialPedidos();
+            tableLayoutPanel1.Controls.Add(current, 0, 0);
+            tableLayoutPanel1.SetColumnSpan(current, 1);
+        }
+
+        private void RegresarMenu_Click(object sender, EventArgs e)
+        {
+            MainMenu main = new MainMenu();
+            main.Show();
+            this.Hide();
         }
     }
 }

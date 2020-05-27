@@ -101,6 +101,12 @@
       <DependentUpon>AgregarDirección.cs</DependentUpon>
     </Compile>
     <Compile Include="ConectionDB.cs" />
+    <Compile Include="HistorialPedidos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HistorialPedidos.Designer.cs">
+      <DependentUpon>HistorialPedidos.cs</DependentUpon>
+    </Compile>
     <Compile Include="IniciarSesion.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -118,6 +124,12 @@
     </Compile>
     <Compile Include="LogIn.Designer.cs">
       <DependentUpon>LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarEliminar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModificarEliminar.Designer.cs">
+      <DependentUpon>ModificarEliminar.cs</DependentUpon>
     </Compile>
     <Compile Include="Pedido.cs">
       <SubType>UserControl</SubType>
@@ -145,6 +157,9 @@
     <EmbeddedResource Include="AgregarDirección.resx">
       <DependentUpon>AgregarDirección.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="HistorialPedidos.resx">
+      <DependentUpon>HistorialPedidos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="IniciarSesion.resx">
       <DependentUpon>IniciarSesion.cs</DependentUpon>
     </EmbeddedResource>
@@ -153,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarEliminar.resx">
+      <DependentUpon>ModificarEliminar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pedido.resx">
       <DependentUpon>Pedido.cs</DependentUpon>
