@@ -91,6 +91,7 @@
             this.button4.TabIndex = 3;
             this.button4.Text = "Cerrar sesión";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.CerrarSesion_Click);
             // 
             // button5
             // 

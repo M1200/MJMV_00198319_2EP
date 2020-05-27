@@ -16,10 +16,18 @@ namespace HUGO
         {
             InitializeComponent();
         }
+        private void CerrarSesion_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            MainMenu main = new MainMenu();
+            main.Show();
+        }
 
         private void Salir_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
+
+       
     }
 }
