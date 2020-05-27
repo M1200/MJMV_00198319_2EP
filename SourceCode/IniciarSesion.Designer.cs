@@ -120,6 +120,7 @@ namespace HUGO
             this.button1.TabIndex = 4;
             this.button1.Text = "Continuar";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Continuar_Click);
             // 
             // IniciarSesion
             // 

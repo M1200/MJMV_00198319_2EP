@@ -9,6 +9,11 @@ namespace HUGO
             InitializeComponent();
         }
 
-     
+        private void Continuar_Click(object sender, System.EventArgs e)
+        {
+            UsuarioComun usuarioComun = new UsuarioComun();
+            usuarioComun.Show();
+            this.Hide();
+        }
     }
 }
