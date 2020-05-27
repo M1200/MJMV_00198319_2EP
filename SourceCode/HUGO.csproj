@@ -88,6 +88,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActualizarContra.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ActualizarContra.Designer.cs">
+      <DependentUpon>ActualizarContra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarDirección.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AgregarDirección.Designer.cs">
+      <DependentUpon>AgregarDirección.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConectionDB.cs" />
     <Compile Include="IniciarSesion.cs">
       <SubType>UserControl</SubType>
@@ -127,6 +139,12 @@
     <Compile Include="UsuarioComun.Designer.cs">
       <DependentUpon>UsuarioComun.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ActualizarContra.resx">
+      <DependentUpon>ActualizarContra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarDirección.resx">
+      <DependentUpon>AgregarDirección.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="IniciarSesion.resx">
       <DependentUpon>IniciarSesion.cs</DependentUpon>
     </EmbeddedResource>
