@@ -39,7 +39,6 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,7 +59,6 @@
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.label5, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.button1, 0, 6);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.ForeColor = System.Drawing.Color.White;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -196,19 +194,6 @@
             this.textBox5.Size = new System.Drawing.Size(308, 31);
             this.textBox5.TabIndex = 9;
             // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Font = new System.Drawing.Font("Bauhaus 93", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(95, 395);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(105, 28);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Continuar";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // Registro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -236,6 +221,5 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
     }
 }
