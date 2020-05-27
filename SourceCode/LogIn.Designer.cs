@@ -35,7 +35,10 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.iniciarSesion1 = new HUGO.IniciarSesion();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -72,6 +75,7 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "Iniciar sesión ";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.IniciarSesion_Click);
             // 
             // button2
             // 
@@ -114,12 +118,37 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.Salir_Click);
             // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Controls.Add(this.iniciarSesion1, 0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 189);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 367F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(560, 367);
+            this.tableLayoutPanel1.TabIndex = 6;
+            // 
+            // iniciarSesion1
+            // 
+            this.iniciarSesion1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.iniciarSesion1.BackColor = System.Drawing.Color.Transparent;
+            this.iniciarSesion1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.iniciarSesion1.Location = new System.Drawing.Point(3, 3);
+            this.iniciarSesion1.Name = "iniciarSesion1";
+            this.iniciarSesion1.Size = new System.Drawing.Size(554, 361);
+            this.iniciarSesion1.TabIndex = 0;
+            // 
             // LogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(558, 614);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -130,18 +159,22 @@
             this.Name = "LogIn";
             this.Text = "Inicio Sesión";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
-        #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+
+        #endregion
+
+        private IniciarSesion iniciarSesion1;
     }
 }
