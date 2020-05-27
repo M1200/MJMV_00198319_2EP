@@ -14,6 +14,7 @@ namespace HUGO
             UsuarioComun usuarioComun = new UsuarioComun();
             usuarioComun.Show();
             this.Hide();
+            
         }
     }
 }
