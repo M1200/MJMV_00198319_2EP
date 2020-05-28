@@ -22,22 +22,22 @@
 
         #region Código generado por el Diseñador de componentes
 
-        /// <summary> 
-        /// Método necesario para admitir el Diseñador. No se puede modificar
-        /// el contenido de este método con el editor de código.
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.Usuario = new System.Windows.Forms.Label();
+            this.Contraseña = new System.Windows.Forms.Label();
+            this.NuevaContra = new System.Windows.Forms.Label();
+            this.Cofirmacion = new System.Windows.Forms.Label();
+            this.Actualizar = new System.Windows.Forms.Button();
+            this.textBoxContra = new System.Windows.Forms.TextBox();
+            this.textBoxNuevaContra = new System.Windows.Forms.TextBox();
+            this.textBoxConfirm = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,15 +47,15 @@
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65F));
-            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label3, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label4, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.button1, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.textBox1, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.textBox2, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.textBox3, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.textBox4, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.Usuario, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.Contraseña, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.NuevaContra, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.Cofirmacion, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.Actualizar, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.textBoxContra, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.textBoxNuevaContra, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.textBoxConfirm, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.comboBox1, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -66,112 +66,114 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(435, 475);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // label1
+            // Usuario
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Bauhaus 93", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(79, 85);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 18);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Usuario: ";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Usuario.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.Usuario.AutoSize = true;
+            this.Usuario.Font = new System.Drawing.Font("Bauhaus 93", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.Usuario.ForeColor = System.Drawing.Color.White;
+            this.Usuario.Location = new System.Drawing.Point(79, 85);
+            this.Usuario.Name = "Usuario";
+            this.Usuario.Size = new System.Drawing.Size(70, 18);
+            this.Usuario.TabIndex = 0;
+            this.Usuario.Text = "Usuario: ";
+            this.Usuario.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // Contraseña
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Bauhaus 93", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(49, 180);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 18);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Contraseña: ";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Contraseña.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.Contraseña.AutoSize = true;
+            this.Contraseña.Font = new System.Drawing.Font("Bauhaus 93", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.Contraseña.ForeColor = System.Drawing.Color.White;
+            this.Contraseña.Location = new System.Drawing.Point(49, 180);
+            this.Contraseña.Name = "Contraseña";
+            this.Contraseña.Size = new System.Drawing.Size(100, 18);
+            this.Contraseña.TabIndex = 1;
+            this.Contraseña.Text = "Contraseña: ";
+            this.Contraseña.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label3
+            // NuevaContra
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Bauhaus 93", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(3, 275);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(146, 18);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Nueva Contraseña: ";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.NuevaContra.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.NuevaContra.AutoSize = true;
+            this.NuevaContra.Font = new System.Drawing.Font("Bauhaus 93", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.NuevaContra.ForeColor = System.Drawing.Color.White;
+            this.NuevaContra.Location = new System.Drawing.Point(3, 275);
+            this.NuevaContra.Name = "NuevaContra";
+            this.NuevaContra.Size = new System.Drawing.Size(146, 18);
+            this.NuevaContra.TabIndex = 2;
+            this.NuevaContra.Text = "Nueva Contraseña: ";
+            this.NuevaContra.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label4
+            // Cofirmacion
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Bauhaus 93", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(32, 370);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(117, 18);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Confirmación: ";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Cofirmacion.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.Cofirmacion.AutoSize = true;
+            this.Cofirmacion.Font = new System.Drawing.Font("Bauhaus 93", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.Cofirmacion.ForeColor = System.Drawing.Color.White;
+            this.Cofirmacion.Location = new System.Drawing.Point(32, 370);
+            this.Cofirmacion.Name = "Cofirmacion";
+            this.Cofirmacion.Size = new System.Drawing.Size(117, 18);
+            this.Cofirmacion.TabIndex = 3;
+            this.Cofirmacion.Text = "Confirmación: ";
+            this.Cofirmacion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button1
+            // Actualizar
             // 
-            this.button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button1.BackColor = System.Drawing.Color.Purple;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Bauhaus 93", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(3, 430);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(146, 42);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Menu Principal";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.VolverMenu_Click);
+            this.Actualizar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.Actualizar.BackColor = System.Drawing.Color.Black;
+            this.Actualizar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Actualizar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Actualizar.Font = new System.Drawing.Font("Bauhaus 93", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.Actualizar.ForeColor = System.Drawing.Color.White;
+            this.Actualizar.Location = new System.Drawing.Point(3, 430);
+            this.Actualizar.Name = "Actualizar";
+            this.Actualizar.Size = new System.Drawing.Size(146, 42);
+            this.Actualizar.TabIndex = 4;
+            this.Actualizar.Text = "Actualizar\r\n";
+            this.Actualizar.UseVisualStyleBackColor = false;
+            this.Actualizar.Click += new System.EventHandler(this.VolverMenu_Click);
             // 
-            // textBox1
+            // textBoxContra
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Font = new System.Drawing.Font("Bauhaus 93", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(195, 79);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(197, 31);
-            this.textBox1.TabIndex = 5;
+            this.textBoxContra.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBoxContra.Font = new System.Drawing.Font("Bauhaus 93", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.textBoxContra.Location = new System.Drawing.Point(195, 174);
+            this.textBoxContra.Name = "textBoxContra";
+            this.textBoxContra.Size = new System.Drawing.Size(197, 31);
+            this.textBoxContra.TabIndex = 6;
             // 
-            // textBox2
+            // textBoxNuevaContra
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox2.Font = new System.Drawing.Font("Bauhaus 93", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(195, 174);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(197, 31);
-            this.textBox2.TabIndex = 6;
+            this.textBoxNuevaContra.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBoxNuevaContra.Font = new System.Drawing.Font("Bauhaus 93", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.textBoxNuevaContra.Location = new System.Drawing.Point(195, 269);
+            this.textBoxNuevaContra.Name = "textBoxNuevaContra";
+            this.textBoxNuevaContra.Size = new System.Drawing.Size(197, 31);
+            this.textBoxNuevaContra.TabIndex = 7;
             // 
-            // textBox3
+            // textBoxConfirm
             // 
-            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox3.Font = new System.Drawing.Font("Bauhaus 93", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(195, 269);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(197, 31);
-            this.textBox3.TabIndex = 7;
+            this.textBoxConfirm.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBoxConfirm.Font = new System.Drawing.Font("Bauhaus 93", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.textBoxConfirm.Location = new System.Drawing.Point(195, 364);
+            this.textBoxConfirm.Name = "textBoxConfirm";
+            this.textBoxConfirm.Size = new System.Drawing.Size(197, 31);
+            this.textBoxConfirm.TabIndex = 8;
             // 
-            // textBox4
+            // comboBox1
             // 
-            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox4.Font = new System.Drawing.Font("Bauhaus 93", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(195, 364);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(197, 31);
-            this.textBox4.TabIndex = 8;
+            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboBox1.Font = new System.Drawing.Font("Bauhaus 93", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(192, 81);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(202, 26);
+            this.comboBox1.TabIndex = 9;
             // 
             // ActualizarContra
             // 
@@ -184,20 +186,19 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-
         }
 
-        #endregion
-
+        private System.Windows.Forms.Button Actualizar;
+        private System.Windows.Forms.Label Cofirmacion;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label Contraseña;
+        private System.Windows.Forms.Label NuevaContra;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBoxConfirm;
+        private System.Windows.Forms.TextBox textBoxContra;
+        private System.Windows.Forms.TextBox textBoxNuevaContra;
+        private System.Windows.Forms.Label Usuario;
+
+        #endregion
     }
 }
