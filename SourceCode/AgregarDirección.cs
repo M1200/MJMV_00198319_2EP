@@ -17,9 +17,24 @@ namespace HUGO
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Agregar_Click(object sender, EventArgs e)
         {
-            throw new System.NotImplementedException();
+            if (textBox1.Text.Equals("") )
+            {
+                MessageBox.Show("Error! tiene que llenar todos los campos");
+            }
+            else
+            {
+                try
+                {
+                    ConectionDb.ExecuteNonQuery($"INSERT INTO ADDRESS VALUES(" +
+                                                $"'{textBox1.Text}')");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Ha sucedido un error");
+                }
+            }
         }
     }
 }
