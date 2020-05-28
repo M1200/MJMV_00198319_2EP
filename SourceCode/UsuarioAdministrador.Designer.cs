@@ -40,8 +40,10 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.registro1 = new HUGO.Registro();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox2
@@ -76,6 +78,7 @@
             this.button1.TabIndex = 10;
             this.button1.Text = "Crear Usuario";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Registro_Click);
             // 
             // button2
             // 
@@ -88,6 +91,7 @@
             this.button2.TabIndex = 11;
             this.button2.Text = "Eliminar Usuario";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.EliminarUsuario_Click);
             // 
             // button3
             // 
@@ -100,6 +104,7 @@
             this.button3.TabIndex = 12;
             this.button3.Text = "Añadir negocio";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.AnadirNegocio_Click);
             // 
             // button4
             // 
@@ -112,6 +117,7 @@
             this.button4.TabIndex = 13;
             this.button4.Text = "Eliminar negocio";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.EliminarNegocio_Click);
             // 
             // button5
             // 
@@ -124,6 +130,7 @@
             this.button5.TabIndex = 14;
             this.button5.Text = "Añadir Producto";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.AnadirProducto_Click);
             // 
             // button6
             // 
@@ -136,6 +143,7 @@
             this.button6.TabIndex = 15;
             this.button6.Text = "Eliminar producto";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.EliminarProducto_Click);
             // 
             // button7
             // 
@@ -148,6 +156,7 @@
             this.button7.TabIndex = 16;
             this.button7.Text = "Ver ordenes";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.VerOrdenes_Click);
             // 
             // button8
             // 
@@ -160,20 +169,31 @@
             this.button8.TabIndex = 17;
             this.button8.Text = "Salir";
             this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.button8.Click += new System.EventHandler(this.Salir_Click);
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Controls.Add(this.registro1, 0, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(132, 113);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 491F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(414, 491);
             this.tableLayoutPanel1.TabIndex = 18;
+            // 
+            // registro1
+            // 
+            this.registro1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.registro1.BackColor = System.Drawing.Color.Transparent;
+            this.registro1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.registro1.Location = new System.Drawing.Point(3, 3);
+            this.registro1.Name = "registro1";
+            this.registro1.Size = new System.Drawing.Size(408, 485);
+            this.registro1.TabIndex = 0;
             // 
             // UsuarioAdministrador
             // 
@@ -197,6 +217,7 @@
             this.Text = "HUGO ADMIN";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -214,5 +235,6 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private Registro registro1;
     }
 }

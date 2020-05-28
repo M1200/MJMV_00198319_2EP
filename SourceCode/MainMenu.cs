@@ -28,5 +28,12 @@ namespace HUGO
             logIn.Show();
             this.Hide();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            UsuarioAdministrador usuario = new UsuarioAdministrador();
+            usuario.Show();
+            this.Hide();
+        }
     }
 }

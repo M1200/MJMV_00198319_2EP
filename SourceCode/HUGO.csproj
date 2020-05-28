@@ -100,7 +100,37 @@
     <Compile Include="AgregarDirección.Designer.cs">
       <DependentUpon>AgregarDirección.cs</DependentUpon>
     </Compile>
+    <Compile Include="AñadirNegocio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AñadirNegocio.Designer.cs">
+      <DependentUpon>AñadirNegocio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AñadirProducto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AñadirProducto.Designer.cs">
+      <DependentUpon>AñadirProducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConectionDB.cs" />
+    <Compile Include="EliminarNegocio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EliminarNegocio.Designer.cs">
+      <DependentUpon>EliminarNegocio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarProducto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EliminarProducto.Designer.cs">
+      <DependentUpon>EliminarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarUsuario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EliminarUsuario.Designer.cs">
+      <DependentUpon>EliminarUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="HistorialPedidos.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -162,6 +192,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AgregarDirección.resx">
       <DependentUpon>AgregarDirección.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AñadirNegocio.resx">
+      <DependentUpon>AñadirNegocio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AñadirProducto.resx">
+      <DependentUpon>AñadirProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarNegocio.resx">
+      <DependentUpon>EliminarNegocio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarProducto.resx">
+      <DependentUpon>EliminarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarUsuario.resx">
+      <DependentUpon>EliminarUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HistorialPedidos.resx">
       <DependentUpon>HistorialPedidos.cs</DependentUpon>
